@@ -1,0 +1,31 @@
+#start_menu
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1
+    {
+        margin: 10px;
+        font-size: 5rem;
+    }
+
+    button
+    {
+        font-size: 2rem;
+        background-color: red;
+        border: 2px solid white;
+        padding: 10px 50px;
+        border-radius: 10px;
+
+        transition: 0.2s ease;
+        cursor: pointer;
+
+        &:hover
+        {
+            transform: scale(1.01);
+        }
+    }
+}

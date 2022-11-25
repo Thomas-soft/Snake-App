@@ -1,10 +1,11 @@
-#start_menu
+#menu
 {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 
     h1
     {
@@ -14,10 +15,11 @@
 
     button
     {
-        font-size: 2rem;
+        font-size: 1.5rem;
         background-color: red;
         border: 2px solid white;
-        padding: 10px 50px;
+        padding: 5px 20px;
+        margin: 40px 20px 0;
         border-radius: 10px;
 
         transition: 0.2s ease;
@@ -26,6 +28,15 @@
         &:hover
         {
             transform: scale(1.01);
+        }
+    }
+
+    #end_menu
+    {
+        .buttons-contain
+        {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 }

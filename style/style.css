@@ -17,7 +17,7 @@ body {
           justify-content: center;
 }
 
-#start_menu {
+#menu {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -32,32 +32,38 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
 }
-#start_menu h1 {
+#menu h1 {
   margin: 10px;
   font-size: 5rem;
 }
-#start_menu button {
-  font-size: 2rem;
+#menu button {
+  font-size: 1.5rem;
   background-color: red;
   border: 2px solid white;
-  padding: 10px 50px;
+  padding: 5px 20px;
+  margin: 40px 20px 0;
   border-radius: 10px;
   -webkit-transition: 0.2s ease;
   -o-transition: 0.2s ease;
   transition: 0.2s ease;
   cursor: pointer;
 }
-#start_menu button:hover {
+#menu button:hover {
   -webkit-transform: scale(1.01);
       -ms-transform: scale(1.01);
           transform: scale(1.01);
+}
+#menu #end_menu .buttons-contain {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 #gameArea {
   width: 100vmin;
   height: 100vmin;
-  display: grid;
+  display: none;
   grid-template-rows: repeat(30, 1fr);
   grid-template-columns: repeat(30, 1fr);
   gap: 1px;

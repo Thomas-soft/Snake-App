@@ -8,12 +8,28 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <header id="start_menu">
-        <h1>Snake</h1>
-        <button type="submit" id="play">Jouer</button>
+    <header id="menu">
+        <div id="start_menu">
+            <h1>Snake</h1>
+            <button type="submit" id="play">Jouer</button>
+        </div>
+        <div id="end_menu">
+            <h1>Snake</h1>
+            <h2>Votre meilleur score : <span id="hight_score_input"></span></h2>
+            <h2>Votre score : <span id="score_input"></span></h2>
+            <div class="buttons-contain">
+                <button type="submit" id="reMenu">Menu principal</button>
+                <button type="submit" id="replay">Rejouer</button>
+            </div>
+        </div>
     </header>
 
-    <main id="gameArea"></main>
+    </header>
+
+    <main id="gameArea">
+        <div id="food"></div>
+        <div class="snake" id="snake0"></div>
+    </main>
 
     <script src="index.js"></script>
 </body>
